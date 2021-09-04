@@ -1,0 +1,5 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "dabe.design"
+theme = "uilite"
+publishDir = "/Users/davidecabitza/Desktop/portfolio"
