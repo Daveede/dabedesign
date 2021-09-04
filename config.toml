@@ -1,5 +1,0 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-publishDir = "/Users/davidecabitza/Desktop/portfolio"
-theme = "uilite"
-title = "dabe.design"
