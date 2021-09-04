@@ -1,0 +1,20 @@
+{
+  "title" : "Experience",
+  "experience" : [
+    {
+      "timeperiod" : "07/2018",
+      "company" : "ITIS OTHOCA",
+      "description" : "  High School Diploma in IT"
+    },
+    {
+      "timeperiod" : "09/2018 - current",
+      "company" : "Appen",
+      "description" : "  Independent contractor"
+    },
+    {
+      "timeperiod" : "07/2021",
+      "company" : "Media Design",
+      "description" : "  Graduated IED as a Media Designer"
+    }
+  ]
+}

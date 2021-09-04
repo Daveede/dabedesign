@@ -1,0 +1,31 @@
+{{ $config := .Site.Data.config }}
+
+{{ partial "header.html" . }}
+{{ partial "sidebar.html" . }}
+
+<div class="main-content">
+	<div class="emp"></div>
+	{{ if gt (len (where .Data.Pages "Type" "blog")) 0 }}{{ partial "blog.html" . }}{{ end }}
+	{{ if .Site.Data.experience }}{{ partial "experience.html" . }}{{ end }}
+	{{ if .Site.Data.services }}{{ partial "services.html" . }}{{ end }}
+	{{ if gt (len (where .Data.Pages "Type" "work")) 0 }}{{ partial "work.html" . }}{{ end }}
+
+</div>
+
+<div style="z-index: 4; position: relative;">
+</div>
+
+<div class="main-content">
+	{{ if $config.showContactForm }}
+	{{ partial "contact.html" . }}
+	<div class="footer align-text-bottom">
+		<p class="text-muted">
+				Created with <i class="fa fa-heart"></i> by
+				<a target="_blank" href="https://florin-pop.com">Dabe.design</a>
+
+			</p>
+	</div>
+	{{ end }}
+</div>
+
+{{ partial "footer-scripts.html" . }}

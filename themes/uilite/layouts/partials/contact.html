@@ -1,0 +1,36 @@
+{{ $config := .Site.Data.config }}
+<section id="contact" class="d-flex align-items-center contact" style="height: 100vh;">
+  <div class="container">
+      <h2 class="heading mb-3">Contact</h2>
+
+      <div class="align-items-center d-flex my-3">
+        <div class="blob-container">
+          <div class="blob green"></div>
+          <div class="text-success">
+            {{ $config.message }}
+          </div>
+
+        </div>
+
+      </div>
+
+      <form action="https://formspree.io/{{ $config.email }}" method="post">
+        <div class="form-row">
+          <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+            <label></label>
+            <input type="text" class="form-control" name="name" placeholder="Name">
+          </div>
+          <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+            <label></label>
+            <input type="email" class="form-control" name="_replyto" placeholder="Email">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label></label>
+          <textarea placeholder="Message" name="message" class="form-control" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark hvr-grow-rotate">Submit</button>
+      </form>
+  </div>
+</section>
