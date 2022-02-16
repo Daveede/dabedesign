@@ -1,4 +1,10 @@
-<section class="work d-flex">
+<section class="work d-flex" >
+  <div class="text-center mt-5 mr-5">
+    <a href="{{ .Site.BaseURL }}work" class="btn btn-lg btn-dark-faded ">Browse All</a>
+  </div>
+  <h2 class="heading pb-5"></h2>
+
+
     {{ range first 20 (where (where .Site.Pages "Section" "work") ".Title" "!=" "Works" )}}
     <div class="col-lg-4 col-md-4 col-12 mb-3">
         <div class="card p-4">
@@ -14,11 +20,10 @@
               <span class="badge badge-light">{{ title . }}</span>
             {{ end }}
 
-            <div class="float-right">
 
-            </div>
           </div>
         </div>
     </div>
     {{ end }}
+
 </section>

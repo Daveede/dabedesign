@@ -1,5 +1,6 @@
-baseURL = ""
+baseURL = "https://dabe.design/"
 languageCode = "en-us"
 theme = "uilite"
 title = "dabe.design"
 publishDir = "/Users/davidecabitza/Desktop/portfolio"
+disableFastRender=true
